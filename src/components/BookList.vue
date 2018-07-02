@@ -18,12 +18,9 @@ name:'BookList',
             {title:'Self reliance',author:'Radalp'},
             {title:'American Gods',author:'Simson'},
             {title:'Titanic',author:'Jack Smith'},
-
-
         ]
     }
-        }
-
+  }
 }
 </script>
 <style>
