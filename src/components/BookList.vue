@@ -2,7 +2,7 @@
 <div>
     <h1>{{ title }}</h1>
     <ul>
-    <li v-for="book in books">{{book.title}},{{book.author}}</li>
+    <li v-for="book in books">{{book.title}}:{{book.author}}</li>
 
     </ul>
 </div>
@@ -26,18 +26,16 @@ name:'BookList',
 
 }
 </script>
-
 <style>
 h1,h2{
  font-weight:normal;
 }
 ul{
-    list-style-type:none;
-padding:0;
-
+    list-style-type: none;
+ padding: 0;
 }
 li{
-diplay:block;
-    margin:0 10px;
+  diplay: block;
+  margin: 0 10px;
 }
 </style>
