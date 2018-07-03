@@ -5,15 +5,18 @@
     <book-item v-for="book in books" :book='book'>{{book.title}}:{{book.author}}</book-item>
 
     </ul>
+    <hr>
+    <book-form @addBook='appendBook'></book-form>
 </div>
 </template>
 
 <script>
  import BookItem from './BookItem';
+ import BookForm from './BookForm';
 export default {
 name:'BookList',
     components: {
-    BookItem
+    BookItem,BookForm
     },
     data(){
     return{
@@ -24,7 +27,10 @@ name:'BookList',
             {title:'Titanic',author:'Jack Smith'},
         ]
     }
-  }
+  },
+    methods:{
+    appendBook({title: bookTitle,author:bookAuthor})
+    }
 }
 </script>
 <style>
