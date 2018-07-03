@@ -30,7 +30,7 @@ name:'BookList',
     }
   },
     methods:{
-    appendBook({title: bookTitle,author:bookAuthor})
+    appendBook({title: bookTitle,author: bookAuthor})
     }
 }
 </script>
