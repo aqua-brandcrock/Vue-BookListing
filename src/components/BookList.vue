@@ -16,7 +16,8 @@
 export default {
 name:'BookList',
     components: {
-    BookItem,BookForm
+    BookItem,
+    BookForm
     },
     data(){
     return{
