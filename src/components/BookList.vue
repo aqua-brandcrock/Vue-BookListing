@@ -3,9 +3,8 @@
     <h1>{{ title }}</h1>
     <ul>
     <book-item v-for="book in books" :book='book'>{{book.title}}:{{book.author}}</book-item>
-
     </ul>
-    <hr>
+    <hr><br />
     <book-form @addBook='appendBook'></book-form>
 </div>
 </template>
@@ -24,15 +23,16 @@ name:'BookList',
         title:'All Books',
         books: [
             {title:'Self reliance',author:'Radalp'},
-            {title:'American Gods',author:'Simson'},
-            {title:'Titanic',author:'Jack Smith'},
+            
         ]
     }
   },
     methods:{
-    appendBook({title: bookTitle,author: bookAuthor})
+    appendBook(bookTitle,bookAuthor){
+	this.books.push({title: bookTitle,author: bookAuthor})
     }
 }
+ }
 </script>
 <style>
 h1,h2{
